@@ -5,10 +5,10 @@ class Pricing extends React.Component {
   state = {
     priceInputValue: "1",
     priceInput: {
-      0: "10",
-      1: "50",
-      2: "100",
-      3: "500",
+      0: "10K",
+      1: "50K",
+      2: "100K",
+      3: "500K",
       4: "1M",
     },
     priceOutput: {
@@ -65,7 +65,7 @@ class Pricing extends React.Component {
       <div className="pricing">
         <div className="pricing-items">
           <div className="pricing-paragraph">
-            <p>{this.getPricingData(this.state.priceInput)}K PAGEVIEWS</p>
+            <p>{this.getPricingData(this.state.priceInput)} PAGEVIEWS</p>
           </div>
           <div className="pricing-item-content">
             <span className="pricing-item-price-currency">
